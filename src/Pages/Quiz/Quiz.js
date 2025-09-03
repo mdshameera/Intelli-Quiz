@@ -37,6 +37,7 @@ const Quiz = ({ name, score, questions, setQuestions, setScore }) => {
 						<span>Category: {questions[currQues].category}</span>
 						<span>Score: {score}</span>
 					</div>
+					<div className="questionWrapper">
 
 					<Question
 						currQues={currQues}
@@ -48,6 +49,7 @@ const Quiz = ({ name, score, questions, setQuestions, setScore }) => {
 						setScore={setScore}
 						setQuestions={setQuestions}
 					/>
+					</div>
 				</>
 			) : (
 				<CircularProgress
